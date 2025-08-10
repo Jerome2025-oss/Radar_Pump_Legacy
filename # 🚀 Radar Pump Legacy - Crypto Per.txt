@@ -1,0 +1,33 @@
+# 🚀 Radar Pump Legacy - Crypto Performance Tracker
+
+![Google Colab](https://colab.research.google.com/assets/colab-badge.svg) ![Python](https://img.shields.io/badge/python-3.8%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+
+## 📌 Description
+Outil automatisé qui :
+- Récupère les données crypto via l'API CoinMarketCap
+- Stocke l'historique en format Parquet
+- Génère un rapport Excel des meilleures performances
+- Tourne automatiquement toutes les 10 minutes
+
+## 🛠 Prérequis
+- Compte Google (pour Colab + Drive)
+- Clé API CoinMarketCap ([obtenez-la ici](https://pro.coinmarketcap.com/signup))
+- 15GB d'espace Google Drive (gratuit)
+
+## 🚀 Comment lancer
+1. **Ouvrez le notebook dans Colab** :  
+   [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/votreuser/votrerepo/blob/main/Radar_Pump_Legacy.ipynb)
+
+2. **Exécutez toutes les cellules** :  
+   `Runtime > Run all` (ou ▶ sur chaque cellule)
+
+3. **Autorisations** :
+   - Acceptez la connexion à Google Drive
+   - Entrez votre clé API quand demandé
+
+## ⚙️ Fonctionnement
+- **Données** : Sauvegardées dans `Drive/crypto_data/crypto_data_wide_AAAA-WXX.parquet`
+- **Rapports** : Générés dans `Drive/rapport_performance_crypto.xlsx`
+- **Filtre** : Ne conserve que les tokens avec +1% de gain
+
+## 📂 Structure des fichiers
